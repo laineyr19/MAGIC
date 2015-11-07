@@ -1,0 +1,38 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function evenNumber(n){
+			if (n%2 >0){
+				console.log("boo",n);
+				return false;
+			}
+			else if (Math.abs(n%2)>0){
+				console.log("negative boo",n);
+				return false;
+			}
+
+			else if (isNaN(n)){
+				console.log("try a number",n)
+				return false;
+			}
+			else {
+				console.log("yay",n);
+				return true;
+			}
+		}
+evenNumber(6)
+evenNumber("lainey")
+evenNumber("...")
+evenNumber(.805)
+evenNumber(-5)
+evenNumber(-6)
+
+
+	</script>
+
+</body>
+</html>
